@@ -1,0 +1,40 @@
+.control-panel {
+    position: relative;
+    display: inline-block;
+    padding: 20px 0px 10px 30px;
+}
+
+button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #ffffff;
+}
+
+.dropdown-item {
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #e0e0e0;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

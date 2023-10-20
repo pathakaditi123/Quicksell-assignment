@@ -1,0 +1,114 @@
+.card {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h4 {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.card-content .content-with-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: white;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.body {
+  background-color: aliceblue;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: black;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: orange;
+}
+
+.profile-status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.profile-margin {
+  margin-left: 30px;
+}
+
+.status-icon, .more-icon, .dot-icon, .icon {
+  font-size: 1rem;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.dot-feature {
+  color: grey;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .profile-margin {
+    margin-left: 15px;
+  }
+
+  .card-content .content-with-icon {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card-header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .card-footer {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,147 @@
+.kanban-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1em 0;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+.kanban-column {
+  flex: 1;
+  padding: 0 10px;
+  background-color: transparent;
+  position: relative;
+  border-right: 1px solid #e0e0e0;
+}
+
+.kanban-column:last-child {
+  border-right: none;
+}
+
+.kanban-column h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.kanban-column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.status-icon,
+.priority-icon,
+.user-icon {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.add-icon,
+.ellipsis-icon {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  transform: translateY(-50%);
+}
+
+.add-icon {
+  right: 40px;
+}
+
+.ellipsis-icon {
+  right: 10px;
+}
+
+.add-ticket {
+  padding-left: 150px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.add-more {
+  position: relative;
+  padding-left: 10px;
+}
+
+.done-icon,
+.cancel-icon,
+.in-progress-icon,
+.todo-icon {
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 1.3rem;
+}
+
+.done-icon {
+  color: rgb(119, 86, 236);
+  padding: 2px;
+  font-size: 1rem;
+}
+
+.cancel-icon,
+.todo-icon {
+  color: grey;
+  padding: 2px;
+}
+
+.in-progress-icon {
+  color: rgb(241, 241, 13);
+}
+
+.status-icon {
+  font-size: 1rem;
+}
+
+.status-and-count,
+.status-info,
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+h2, span {
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .kanban-navbar {
+    flex-direction: column;
+  }
+
+  .kanban-column {
+    margin-bottom: 1em;
+  }
+
+  .add-icon {
+    right: 30px;
+  }
+
+  .header-content {
+    gap: 5px;
+  }
+
+  .status-icon,
+  .priority-icon,
+  .user-icon {
+    margin-right: 5px;
+  }
+}

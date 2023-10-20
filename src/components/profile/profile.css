@@ -1,0 +1,37 @@
+/* Already included in the Card.css above, but separating for modularity */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.availability-dot {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    
+}
