@@ -40,7 +40,7 @@ const ControlPanel = ({ setGroupedBy, setSortedBy }) => {
     return (
         <div className="control-panel">
             <button onClick={() => setShowDropdown(!showDropdown)}>
-                <FontAwesomeIcon icon={faSlidersH} />  Display <VscChevronDown />
+                <FontAwesomeIcon className='buttonicon'icon={faSlidersH} />  Display <VscChevronDown />
             </button>
             {showDropdown && (
                 <div className="dropdown-content" ref={dropdownRef}>
