@@ -1,7 +1,10 @@
 .control-panel {
     position: relative;
-    display: inline-block;
-    padding: 20px 0px 10px 30px;
+    display: block;
+    padding: 10px 20px; 
+    background-color: #ffffff;
+   
+    border-radius: 4px; 
 }
 
 button {
@@ -10,13 +13,20 @@ button {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
+    display: inline-flex; 
+    align-items: center; 
 }
 
 .dropdown-content {
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 220px; 
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     padding: 8px;
     background-color: #ffffff;
+    z-index: 1000; 
 }
 
 .dropdown-item {
@@ -27,6 +37,7 @@ button {
 .dropdown-item:hover {
     background-color: #e0e0e0;
 }
+
 label {
     display: block;
     margin-bottom: 10px;
@@ -37,4 +48,7 @@ select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+.buttonicon{
+    padding-right: 5px;
 }
