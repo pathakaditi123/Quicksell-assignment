@@ -39,11 +39,14 @@ const Card = ({ id, title, tag, user, status, priority, groupedBy }) => {
         <div className="card">
             <div className="card-header">
                 <h4>{id}</h4>
-                <Profile 
-                    name={user ? user.name : "Unknown"} 
-                    className="profile-margin" 
-                    available={user ? user.available : false} 
-                />
+                
+                {groupedBy !== 'user' && 
+                    <Profile 
+                        name={user ? user.name : "Unknown"} 
+                        className="profile-margin" 
+                        available={user ? user.available : false} 
+                    />
+                }
             </div>
             <div className="card-content">
                 <span className="content-with-icon">
