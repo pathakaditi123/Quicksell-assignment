@@ -4,8 +4,8 @@
   align-items: flex-start;
   width: 100%;
   padding: 1em 0;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ddd;
+ 
+  
 }
 
 .kanban-column {
@@ -13,7 +13,8 @@
   padding: 0 10px;
   background-color: transparent;
   position: relative;
-  border-right: 1px solid #e0e0e0;
+  
+  max-width: 100%; 
 }
 
 .kanban-column:last-child {
@@ -52,32 +53,28 @@
   margin-right: 10px;
 }
 
-.add-icon,
-.ellipsis-icon {
-  position: absolute;
-  top: 50%;
-  font-size: 20px;
-  transform: translateY(-50%);
-}
 
-.add-icon {
-  right: 40px;
-}
 
-.ellipsis-icon {
-  right: 10px;
-}
 
 .add-ticket {
-  padding-left: 150px;
-  padding-right: 5px;
+  position: absolute;
+  top: 50%;
+  right: 68px; 
+  font-size: 20px;
+  transform: translateY(-50%); 
   cursor: pointer;
 }
 
 .add-more {
-  position: relative;
-  padding-left: 10px;
+  position: absolute;
+  top: 50%;
+  right: 28px; 
+  font-size: 20px;
+  transform: translateY(-50%); 
+  cursor: pointer; 
 }
+
+
 
 .done-icon,
 .cancel-icon,
@@ -125,10 +122,12 @@ h2, span {
 @media (max-width: 768px) {
   .kanban-navbar {
     flex-direction: column;
+    align-items: stretch; 
   }
 
   .kanban-column {
     margin-bottom: 1em;
+    padding: 0 5px; 
   }
 
   .add-icon {
